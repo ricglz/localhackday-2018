@@ -25,15 +25,15 @@ public class Player : MonoBehaviour {
 		transform.Translate(speed * -1, 0 , 0);
 
 		//will stop when reaching borders
-		 if (transform.position.x <= -11.5f) {
-		     transform.position = new Vector2(-11.5f, transform.position.y);
-		 } else if (transform.position.x >= 11.5f) {
-		     transform.position = new Vector2(11.5f, transform.position.y);
+		 if (transform.position.x <= -16.5f) {
+		     transform.position = new Vector2(-16.5f, transform.position.y);
+		 } else if (transform.position.x >= 16.5f) {
+		     transform.position = new Vector2(16.5f, transform.position.y);
 		 }
-		 if (transform.position.y <= -5) {
-		     transform.position = new Vector2(transform.position.x, -5);
+		 if (transform.position.y <= -9) {
+		     transform.position = new Vector2(transform.position.x, -9);
 		 } else if (transform.position.y >= 5) {
-		     transform.position = new Vector2(transform.position.x, 5);
+		     transform.position = new Vector2(transform.position.x, 9);
 		 }
 
 	}
