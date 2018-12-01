@@ -22,7 +22,7 @@ public class Player : MonoBehaviour {
 
 		transform.Rotate(0, 0, rotation);
 
-		transform.Translate(speed * -1, 0 , 0);
+		// transform.Translate(speed * -1, 0 , 0);
 
 		//will stop when reaching borders
 		 if (transform.position.x <= -16.5f) {

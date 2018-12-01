@@ -19,17 +19,18 @@ public class Bullet : MonoBehaviour {
   }
 
   void OnCollisionEnter (Collision hit) {
-    Debug.LogError(GameObject.Find("Canvas"));
+    Debug.LogError("Solve it");
     if (hit.gameObject.tag == "Player") {
       Player.hitPoints--;
       ui.UpdateLives(Player.hitPoints);
       if(Player.hitPoints < 0) {
-        Destroy(this.gameObject);
+        Destroy(hit.gameObject);
       }
 		} else if(hit.gameObject.tag == "enemy") {
       UI.score += 100;
-      Destroy(this.gameObject);
+      Destroy(hit.gameObject);
       SpawnEnemy.CountEnemy--;
     }
+    Destroy(this.gameObject);
   }
 }
