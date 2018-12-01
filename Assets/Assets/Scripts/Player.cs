@@ -32,7 +32,7 @@ public class Player : MonoBehaviour {
 		 }
 		 if (transform.position.y <= -9) {
 		     transform.position = new Vector2(transform.position.x, -9);
-		 } else if (transform.position.y >= 5) {
+		 } else if (transform.position.y >= 9) {
 		     transform.position = new Vector2(transform.position.x, 9);
 		 }
 
