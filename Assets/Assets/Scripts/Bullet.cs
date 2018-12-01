@@ -21,6 +21,7 @@ public class Bullet : MonoBehaviour {
       }
 		} else if(hit.gameObject.tag == "enemy") {
       Destroy(this.gameObject);
+      SpawnEnemy.CountEnemy--;
     }
   }
 }
