@@ -1,7 +1,16 @@
 fileFormatVersion: 2
 guid: 24006d042027944d2aa42f914816b0fb
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: pc-1
+    21300002: npc-1
+    21300004: boss
+    21300006: ultra-boss
+    21300008: pw-1
+    21300010: pw-2
+    21300012: fire-red
+    21300014: fire-blue
+    21300016: small npc
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -40,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,9 +78,200 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: pc-1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1395
+        width: 30
+        height: 32
+      alignment: 9
+      pivot: {x: 0.09612484, y: 0.49378967}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52c118e137e044bdcb3c2a8fe599fc38
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc-1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1513
+        width: 32
+        height: 24
+      alignment: 9
+      pivot: {x: 0.9507946, y: 0.5026398}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e409147e08b1a494390455ca377b44a5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1314
+        width: 63
+        height: 64
+      alignment: 9
+      pivot: {x: 0.21226554, y: 0.49650383}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff16b0452d3a44d3e88136b9f0633700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ultra-boss
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1174
+        width: 128
+        height: 119
+      alignment: 9
+      pivot: {x: 0.17829698, y: 0.4930067}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 549dc69a7786048f98fe2febe27a7eff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pw-1
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 962
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94927f4d107b6490fb6179500747b27d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pw-2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 928
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc644e8753c94ead964bd971fa49565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire-red
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 868
+        width: 29
+        height: 8
+      alignment: 9
+      pivot: {x: 0.8916381, y: 0.54475707}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31af5d807ae424a18984d9b228e0bcaa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire-blue
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 856
+        width: 29
+        height: 8
+      alignment: 9
+      pivot: {x: 0.87065744, y: 0.5223816}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65729ecf7ad934860b2bcecbbf939330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small npc
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1454
+        width: 31
+        height: 13
+      alignment: 9
+      pivot: {x: 0.5462631, y: 0.5154228}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d586de0883646f7a9826e8a0c9593e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
