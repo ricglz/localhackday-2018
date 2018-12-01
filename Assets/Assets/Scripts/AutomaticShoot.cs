@@ -12,7 +12,8 @@ public class AutomaticShoot : MonoBehaviour {
         segundo -= Time.deltaTime;
         if (segundo < 0) {
             Rigidbody clone = Instantiate(bullet, transform.position, transform.rotation) as Rigidbody;
-            clone.velocity = transform.TransformDirection(new Vector3(speed * -1, 0, 0));
+            float rand_z = Random.Range(-10, 10);
+            clone.velocity = transform.TransformDirection(new Vector3(speed * -1, rand_z, 0));
             segundo = 1f;
         }
     }
