@@ -13,7 +13,7 @@ public class Player : MonoBehaviour {
 	void Start () {
 		rb2d = GetComponent<Rigidbody2D> ();
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		float rotation = Input.GetAxis("Horizontal") * rotationSpeed;
@@ -23,5 +23,18 @@ public class Player : MonoBehaviour {
 		transform.Rotate(0, 0, rotation);
 
 		transform.Translate(speed * -1, 0 , 0);
+
+		//will stop when reaching borders
+		 if (transform.position.x <= -11.5f) {
+		     transform.position = new Vector2(-11.5f, transform.position.y);
+		 } else if (transform.position.x >= 11.5f) {
+		     transform.position = new Vector2(11.5f, transform.position.y);
+		 }
+		 if (transform.position.y <= -5) {
+		     transform.position = new Vector2(transform.position.x, -5);
+		 } else if (transform.position.y >= 5) {
+		     transform.position = new Vector2(transform.position.x, 5);
+		 }
+
 	}
 }
