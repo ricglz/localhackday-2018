@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour {
 
 	Rigidbody2D rb2d;
-	static int hitPoints = 3;
+	public static int hitPoints = 3;
 
 	// Use this for initialization
 	void Start () {
