@@ -23,6 +23,7 @@ public class Bullet : MonoBehaviour {
 		} else if(hit.gameObject.tag == "enemy") {
       UI.score += 100;
       Destroy(this.gameObject);
+      SpawnEnemy.CountEnemy--;
     }
   }
 }
