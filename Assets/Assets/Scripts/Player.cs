@@ -6,6 +6,8 @@ public class Player : MonoBehaviour {
 
 	Rigidbody2D rb2d;
 	public static int hitPoints = 3;
+	private int rotationSpeed = 120;
+	private float speed = .05f;
 
 	// Use this for initialization
 	void Start () {
@@ -14,10 +16,12 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown(KeyCode.A)) {
-			transform.Rotate (Vector3.forward * Time.deltaTime);
-		} else if(Input.GetKeyDown(KeyCode.D)) {
-			transform.Rotate (Vector3.back * Time.deltaTime);
-		}
+		float rotation = Input.GetAxis("Horizontal") * rotationSpeed;
+
+		rotation *= Time.deltaTime;
+
+		transform.Rotate(0, 0, rotation);
+
+		transform.Translate(speed * -1, 0 , 0);
 	}
 }

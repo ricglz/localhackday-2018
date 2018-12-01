@@ -4,8 +4,17 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour {
 
+  private float timeLeft = 3;
+
+  void Update() {
+    timeLeft -= Time.deltaTime;
+    if(timeLeft <= 0) {
+      Destroy(this.gameObject);
+    }
+  }
+
   void OnCollisionEnter (Collision hit) {
-    if (hit.gameObject.tag == "player") {
+    if (hit.gameObject.tag == "Player") {
       Player.hitPoints--;
       if(Player.hitPoints < 0) {
         Destroy(this.gameObject);

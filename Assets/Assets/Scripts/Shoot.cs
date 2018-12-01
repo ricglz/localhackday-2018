@@ -5,13 +5,12 @@ using UnityEngine;
 public class Shoot : MonoBehaviour {
 
   public Rigidbody bullet;
-  private float nextFire = 0.0f;
-  private float fireRate = 1;
+  private int speed = -10;
 
   void Update () {
-    if (Input.GetButton("Fire1") && Time.time > nextFire){
-      nextFire = Time.time + fireRate;
-      Instantiate(bullet, transform.position, transform.rotation);
+    if (Input.GetKeyDown(KeyCode.Space)) {
+      Rigidbody clone = Instantiate(bullet, transform.position, transform.rotation) as Rigidbody;
+      clone.velocity = transform.TransformDirection(new Vector3(speed, 0, 0));
     }
   }
 }
