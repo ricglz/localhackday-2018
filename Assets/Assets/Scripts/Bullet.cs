@@ -16,10 +16,12 @@ public class Bullet : MonoBehaviour {
   void OnCollisionEnter (Collision hit) {
     if (hit.gameObject.tag == "Player") {
       Player.hitPoints--;
+      UI.UpdateLives(Player.hitPoints);
       if(Player.hitPoints < 0) {
         Destroy(this.gameObject);
       }
 		} else if(hit.gameObject.tag == "enemy") {
+      UI.score += 100;
       Destroy(this.gameObject);
     }
   }
