@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class UI : MonoBehaviour {
 
   public Text txtScore;
-  public static GameObject heart1, heart2, heart3;
+  public GameObject heart1, heart2, heart3;
   public static float score = 0;
 
   void Start() {
@@ -20,7 +20,7 @@ public class UI : MonoBehaviour {
     txtScore.text = "Score: " + ((int) score);
   }
 
-  public static void UpdateLives(int livesLeft) {
+  public void UpdateLives(int livesLeft) {
     if(livesLeft == 2) {
       heart3.gameObject.SetActive(false);
     } else if(livesLeft == 1) {
