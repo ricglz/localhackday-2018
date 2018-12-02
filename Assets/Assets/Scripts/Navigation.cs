@@ -13,4 +13,9 @@ public class Navigation : MonoBehaviour {
     {
         SceneManager.LoadScene(scene, LoadSceneMode.Single);
     }
+
+    public void CloseGame()
+    {
+    	Application.Quit();
+    }
 }
