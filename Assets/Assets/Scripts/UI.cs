@@ -25,6 +25,8 @@ public class UI : MonoBehaviour {
       heart3.gameObject.SetActive(false);
     } else if(livesLeft == 1) {
       heart2.gameObject.SetActive(false);
+    } else {
+      heart1.gameObject.SetActive(false);
     }
   }
 }
