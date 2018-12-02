@@ -16,6 +16,8 @@ TextureImporter:
     21300022: explosion-2
     21300024: explosion-3
     21300026: explosion-4
+    21300028: pc-1-1
+    21300030: pc-1-2
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -286,7 +288,7 @@ TextureImporter:
         width: 28
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -306,7 +308,7 @@ TextureImporter:
         width: 30
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -326,7 +328,7 @@ TextureImporter:
         width: 32
         height: 39
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -346,7 +348,7 @@ TextureImporter:
         width: 32
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -366,13 +368,53 @@ TextureImporter:
         width: 30
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 053f0dcd4f20c4068904110524b6be27
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pc-1-1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 1395
+        width: 30
+        height: 32
+      alignment: 9
+      pivot: {x: 0.08948033, y: 0.49230194}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43103b3da1a2e4e3cac9f3331f77fd17
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pc-1-2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 1395
+        width: 29
+        height: 32
+      alignment: 9
+      pivot: {x: 0.07532448, y: 0.50769806}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf9214c0b152452581574ad3e5992fb
       vertices: []
       indices: 
       edges: []
