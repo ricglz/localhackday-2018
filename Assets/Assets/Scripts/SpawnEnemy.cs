@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpawnEnemy : MonoBehaviour {
 
     public GameObject prefabEnemy;
-    public float segundo = 0.15f;
+    public float segundo = 0.3f;
 
     private float RotateSpeed = 4f;
     private float Radius = 10f;

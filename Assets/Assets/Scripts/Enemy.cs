@@ -8,13 +8,11 @@ public class Enemy : MonoBehaviour {
     private float speed = .03f;
     private float MinDist = 2.5f;
 
-    void Start () 
-    {
+    void Start () {
         target = GameObject.FindWithTag("Player").transform;
     }
  
-    void Update()
-    {
+    void Update(){
         transform.right = target.position - transform.position;
 
         if (Vector3.Distance(transform.position,target.position) >= MinDist) {

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour {
+public class BulletE : MonoBehaviour {
 
   private float timeLeft = 3;
   UI ui;
@@ -19,11 +19,14 @@ public class Bullet : MonoBehaviour {
   }
 
   void OnTriggerEnter2D (Collider2D hit) {
-    if(hit.gameObject.tag == "Enemy") {
-      UI.score += 100;
-      Destroy(hit.gameObject);
-      SpawnEnemy.CountEnemy--;
+    Debug.LogError(hit.gameObject.tag);
+    if (hit.gameObject.tag == "Player") {
+      Player.hitPoints--;
+      ui.UpdateLives(Player.hitPoints);
+      if(Player.hitPoints < 0) {
+        Destroy(hit.gameObject);
+      }
       Destroy(this.gameObject);
-    }
+		}
   }
 }
