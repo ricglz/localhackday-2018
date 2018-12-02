@@ -8,7 +8,7 @@ public class Shoot : MonoBehaviour {
   private int speed = -10;
 
   void Update () {
-    if (Input.GetKeyDown(KeyCode.Space)) {
+    if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0)) {
       Rigidbody2D clone = Instantiate(bullet, transform.position, transform.rotation) as Rigidbody2D;
       clone.velocity = transform.TransformDirection(new Vector3(speed, 0, 0));
     }
