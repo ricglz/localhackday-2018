@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpawnEnemy : MonoBehaviour {
 
     public GameObject prefabEnemy;
-    public float segundo = 0.3f;
+    public float segundo = 1f;
 
     private float RotateSpeed = 4f;
     private float Radius = 10f;
@@ -13,12 +13,13 @@ public class SpawnEnemy : MonoBehaviour {
     private Vector2 _centre;
     private float _angle;
 
-    private int LimitEnemies = 20;
-    public static int CountEnemy = 0;
+    private int LimitEnemies = 8;
+    public static int CountEnemy;
 
     // Update is called once per frame
     void Start()
     {
+        CountEnemy = 0;
         _centre = transform.position;
     }
 
@@ -32,7 +33,7 @@ public class SpawnEnemy : MonoBehaviour {
             segundo -= Time.deltaTime;
             if (segundo < 0) {
                 Spawn();
-                segundo = 0.15f;
+                segundo = 1f;
             }
         }
     }

@@ -6,7 +6,7 @@ public class AutomaticShoot : MonoBehaviour {
 
     public Rigidbody2D bullet;
     private int speed = -10;
-    private float segundo = 1f;
+    private float segundo = 2f;
 
     void Update () {
         segundo -= Time.deltaTime;

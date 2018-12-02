@@ -7,9 +7,10 @@ public class UI : MonoBehaviour {
 
   public Text txtScore;
   public GameObject heart1, heart2, heart3;
-  public static float score = 0;
+  public static float score;
 
   void Start() {
+    score = 0;
     heart1.gameObject.SetActive(true);
     heart2.gameObject.SetActive(true);
     heart3.gameObject.SetActive(true);
@@ -17,7 +18,7 @@ public class UI : MonoBehaviour {
 
   void Update() {
     score += Time.deltaTime * 5;
-    txtScore.text = "Score: " + ((int) score);
+    txtScore.text = "Score: \n" + ((int) score);
   }
 
   public void UpdateLives(int livesLeft) {
