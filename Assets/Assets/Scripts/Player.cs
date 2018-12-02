@@ -4,37 +4,44 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 
-	Rigidbody2D rb2d;
-	public static int hitPoints = 3;
-	private int rotationSpeed = 120;
-	private float speed = .05f;
+    Rigidbody2D rb2d;
+    public static int hitPoints = 3;
+    private int rotationSpeed = 120;
+    private float speed = .05f;
 
-	// Use this for initialization
-	void Start () {
-		rb2d = GetComponent<Rigidbody2D> ();
-	}
+    private Camera cam;
+    private float height;
+    private float width;
 
-	// Update is called once per frame
-	void Update () {
-		float rotation = Input.GetAxis("Horizontal") * rotationSpeed;
+    // Use this for initialization
+    void Start () {
+        rb2d = GetComponent<Rigidbody2D> ();
+        cam = Camera.main;
+        height = cam.orthographicSize;
+        width = height * cam.aspect;
+    }
 
-		rotation *= Time.deltaTime;
+    // Update is called once per frame
+    void Update () {
+        float rotation = Input.GetAxis("Horizontal") * rotationSpeed;
 
-		transform.Rotate(0, 0, rotation);
+        rotation *= Time.deltaTime;
 
-		// transform.Translate(speed * -1, 0 , 0);
+        transform.Rotate(0, 0, rotation);
 
-		//will stop when reaching borders
-		 if (transform.position.x <= -16.5f) {
-		     transform.position = new Vector2(-16.5f, transform.position.y);
-		 } else if (transform.position.x >= 16.5f) {
-		     transform.position = new Vector2(16.5f, transform.position.y);
-		 }
-		 if (transform.position.y <= -9) {
-		     transform.position = new Vector2(transform.position.x, -9);
-		 } else if (transform.position.y >= 9) {
-		     transform.position = new Vector2(transform.position.x, 9);
-		 }
+        transform.Translate(speed * -1, 0 , 0);
 
-	}
+        //will stop when reaching borders
+         if (transform.position.x <= -width) {
+             transform.position = new Vector2(-width, transform.position.y);
+         } else if (transform.position.x >= width) {
+             transform.position = new Vector2(width, transform.position.y);
+         }
+         if (transform.position.y <= -height) {
+             transform.position = new Vector2(transform.position.x, -height);
+         } else if (transform.position.y >= height) {
+             transform.position = new Vector2(transform.position.x, height);
+         }
+
+    }
 }
