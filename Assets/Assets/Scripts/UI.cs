@@ -18,7 +18,7 @@ public class UI : MonoBehaviour {
 
   void Update() {
     score += Time.deltaTime * 5;
-    txtScore.text = "Score: " + ((int) score);
+    txtScore.text = "Score: \n" + ((int) score);
   }
 
   public void UpdateLives(int livesLeft) {
