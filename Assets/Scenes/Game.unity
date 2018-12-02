@@ -142,10 +142,10 @@ RectTransform:
   m_Father: {fileID: 1136677648}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -598.88, y: 291.8}
-  m_SizeDelta: {x: 3.24, y: 45.4}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -75.81, y: -69}
+  m_SizeDelta: {x: 3.24, y: 45.399994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &126867516
 SpriteRenderer:
@@ -284,10 +284,10 @@ RectTransform:
   m_Father: {fileID: 1136677648}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -437.07, y: 291.8}
-  m_SizeDelta: {x: 3.24, y: 45.4}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 86, y: -69.00003}
+  m_SizeDelta: {x: 3.24, y: 45.399994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &233805169
 SpriteRenderer:
@@ -723,10 +723,10 @@ RectTransform:
   m_Father: {fileID: 1136677648}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -392, y: 219}
-  m_SizeDelta: {x: 415.8, y: 68.5}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -153.48}
+  m_SizeDelta: {x: 415.8, y: 123.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1299171499
 MonoBehaviour:
@@ -754,12 +754,12 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 4
     m_MaxSize: 45
-    m_Alignment: 0
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 2
   m_Text: 'Score:'
 --- !u!222 &1299171500
 CanvasRenderer:
@@ -797,10 +797,10 @@ RectTransform:
   m_Father: {fileID: 1136677648}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -517.97, y: 291.8}
-  m_SizeDelta: {x: 3.24, y: 45.4}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 5.1000347, y: -69.00003}
+  m_SizeDelta: {x: 3.24, y: 45.399994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1438397411
 SpriteRenderer:
