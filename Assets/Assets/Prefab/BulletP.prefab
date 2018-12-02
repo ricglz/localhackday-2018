@@ -20,14 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4867832156176142}
   - component: {fileID: 212561052587350570}
-  - component: {fileID: 114702063730015488}
-<<<<<<< HEAD
-  m_Layer: 0
-=======
   - component: {fileID: 50822361639942480}
   - component: {fileID: 61044435419691728}
+  - component: {fileID: 114772964446755866}
   m_Layer: 10
->>>>>>> 58d5114b899ac2172732710904238c9bf2857966
   m_Name: BulletP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +88,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.29, y: 0.08}
   m_EdgeRadius: 0
---- !u!114 &114702063730015488
+--- !u!114 &114772964446755866
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
