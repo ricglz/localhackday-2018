@@ -19,12 +19,12 @@ public class BulletE : MonoBehaviour {
   }
 
   void OnTriggerEnter2D (Collider2D hit) {
-    Debug.LogError(hit.gameObject.tag);
     if (hit.gameObject.tag == "Player") {
       Player.hitPoints--;
       ui.UpdateLives(Player.hitPoints);
-      if(Player.hitPoints < 0) {
+      if(Player.hitPoints <= 0) {
         Destroy(hit.gameObject);
+        Navigation.GoTo("GameOver");
       }
       Destroy(this.gameObject);
 		}

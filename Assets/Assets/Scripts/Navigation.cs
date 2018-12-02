@@ -4,7 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Navigation : MonoBehaviour {
-    public void GoTo(string scene)
+    public static void GoTo(string scene)
+    {
+        SceneManager.LoadScene(scene, LoadSceneMode.Single);
+    }
+
+    public void GoToScene(string scene)
     {
         SceneManager.LoadScene(scene, LoadSceneMode.Single);
     }

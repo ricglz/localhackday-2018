@@ -13,10 +13,12 @@ public class Enemy : MonoBehaviour {
     }
  
     void Update(){
-        transform.right = target.position - transform.position;
+        if (target != null) {
+            transform.right = target.position - transform.position;
 
-        if (Vector3.Distance(transform.position,target.position) >= MinDist) {
-            transform.Translate(speed, 0 , 0);
+            if (Vector3.Distance(transform.position,target.position) >= MinDist) {
+                transform.Translate(speed, 0 , 0);
+            }
         }
     }
 }

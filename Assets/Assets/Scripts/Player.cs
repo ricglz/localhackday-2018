@@ -5,8 +5,8 @@ using UnityEngine;
 public class Player : MonoBehaviour {
 
     Rigidbody2D rb2d;
-    public static int hitPoints = 3;
-    private int rotationSpeed = 120;
+    public static int hitPoints;
+    private int rotationSpeed = 200;
     private float speed = .05f;
 
     private Camera cam;
@@ -15,6 +15,7 @@ public class Player : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        hitPoints = 3;
         rb2d = GetComponent<Rigidbody2D> ();
         cam = Camera.main;
         height = cam.orthographicSize;
@@ -23,7 +24,7 @@ public class Player : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        float rotation = Input.GetAxis("Horizontal") * rotationSpeed;
+        float rotation = Input.GetAxis("Horizontal") * rotationSpeed * -1;
 
         rotation *= Time.deltaTime;
 
@@ -42,6 +43,5 @@ public class Player : MonoBehaviour {
          } else if (transform.position.y >= height) {
              transform.position = new Vector2(transform.position.x, height);
          }
-
     }
 }
